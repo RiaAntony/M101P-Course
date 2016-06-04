@@ -19,7 +19,11 @@ use video
 db.movieDetails.find({rated:"PG-13",year:2013,type:"movie","awards.wins":0})
 Answer:A Decade of Decadence, Pt. 2: Legacy of Dreams
 
-HW 2.5 :
+
+HW 2.5 :How many movies list "Sweden" second in the the list of countries.
+NOTE: There is a dump of the video database included in the handouts for the "Creating Documents" lesson. Use that data set to answer this question.
+
+Type following:
 db.movieDetails.find({type:"movie", "countries.1":"Sweden"}).count()
 
 Answer :6
